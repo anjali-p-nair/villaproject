@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+  <style>
+    form{
+            padding-left: 10%;
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            color: navy;
+        }
+  </style>
+</head>
+<body>
+
+<form action="login" method="POST">
+  {% csrf_token %}
+     <label>Username</label>
+     <input type="text" name="username" placeholder="enter the username here "><br>
+     <label>Password</label>
+     <input type="password" name="password" placeholder="enter the password here "><br>
+     <button type="submit" value="Submit">Login</button>
+
+    </form>
+
+</body>
+</html>
