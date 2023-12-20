@@ -5,7 +5,7 @@
     <title>login</title>
   <style>
     form{
-            padding-left: 10%;
+            
 
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 20px;
@@ -24,6 +24,8 @@
      <button type="submit" value="Submit">Login</button>
 
     </form>
-
+{% for msg in messages %}
+<h3>{{msg}}</h3>
+{% endfor %}
 </body>
 </html>
